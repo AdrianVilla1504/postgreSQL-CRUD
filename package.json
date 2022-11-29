@@ -4,9 +4,37 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
   },
   "devDependencies": {
     "prisma": "^4.6.1"
-  }
+  },
+  "name": "postgresql-crud",
+  "description": "A postgress SQL API rest with express and node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianVilla1504/postgreSQL-CRUD.git"
+  },
+  "keywords": [
+    "PostgreSQL",
+    "SQL",
+    "CRUD",
+    "API",
+    "REST",
+    "NODE"
+  ],
+  "author": "Adrian Villa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianVilla1504/postgreSQL-CRUD/issues"
+  },
+  "homepage": "https://github.com/AdrianVilla1504/postgreSQL-CRUD#readme"
 }
