@@ -21,8 +21,8 @@ model Empleado {
   codigo              Int          @id
   nif                 String       @db.VarChar(9)
   nombre              String       @db.VarChar(100)
-  Apellido1           String       @db.VarChar(100)
-  Apellido2           String       @db.VarChar(100)
+  apellido1           String       @db.VarChar(100)
+  apellido2           String       @db.VarChar(100)
   codigo_departamento Departamento @relation(fields: [departamentoCodigo], references: [codigo])
   departamentoCodigo  Int
 }
