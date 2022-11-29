@@ -10,7 +10,7 @@ La aplicacion fue elaborada con:
 
 ## Instrucciones
 
-1. Para correr la Aplicacion clone el repo ``` git clone git@github.com:AdrianVilla1504/postgreSQL-CRUD.git ``` o ``` git clone https://github.com/AdrianVilla1504/postgreSQL-CRUD.git ```
+1. Para correr la Aplicacion clone el repositorio ``` git clone git@github.com:AdrianVilla1504/postgreSQL-CRUD.git ``` o ``` git clone https://github.com/AdrianVilla1504/postgreSQL-CRUD.git ```
 2. Vaya al directorio ``` cd postgreSQL-CRUD ```.
 3. Instale la aplicacion (sus dependencias) con  ``` npm install ```.
 4. Cree el archivo ``` .env ``` con ``` touch .env ```.
