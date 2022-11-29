@@ -1,0 +1,28 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Departamento {
+  codigo      Int        @id
+  nombre      String     @db.VarChar(100)
+  presupuesto Float
+  empleados   Empleado[]
+}
+
+model Empleado {
+  codigo              Int          @id
+  nif                 String       @db.VarChar(9)
+  nombre              String       @db.VarChar(100)
+  Apellido1           String       @db.VarChar(100)
+  Apellido2           String       @db.VarChar(100)
+  codigo_departamento Departamento @relation(fields: [departamentoCodigo], references: [codigo])
+  departamentoCodigo  Int
+}
